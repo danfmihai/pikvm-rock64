@@ -2,7 +2,7 @@
 
 This is experimental and unsupported. Some features may not work.
 
-Pre-built images are available here: https://github.com/Yura80/os/releases
+Pre-built images are available here: https://github.com/danfmihai/os/releases
 
 To make OTG keyboard and mouse work on Rock64 and Libre Computer boards, use an A-to-A USB cable connected to the top left USB port.
 
@@ -16,19 +16,19 @@ Generate a GPG key-pair if you don't have one already and export it to a public 
 
 Clone the repositories:
 
-	git clone https://github.com/Yura80/pikvm-rock64.git
-	git clone https://github.com/Yura80/os.git
-	git clone https://github.com/Yura80/packages.git
+	git clone https://github.com/danfmihai/pikvm-rock64.git
+	git clone https://github.com/danfmihai/os.git
+	git clone https://github.com/danfmihai/packages.git
 	
 Build the packages:
     
     cd packages
-    make buildenv BOARD=generic ARCH=aarch64 _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/Yura80/pi-builder
+    make buildenv BOARD=generic ARCH=aarch64 _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
     make update BOARD=generic ARCH=aarch64
-    make packages-generic BOARD=generic ARCH=aarch64 _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/Yura80/pi-builder
-    make buildenv BOARD=generic ARCH=arm _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/Yura80/pi-builder
+    make packages-generic BOARD=generic ARCH=aarch64 _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
+    make buildenv BOARD=generic ARCH=arm _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
     make update BOARD=generic ARCH=arm
-    make packages-generic BOARD=generic ARCH=arm _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/Yura80/pi-builder
+    make packages-generic BOARD=generic ARCH=arm _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
 
 
 Upload the repository to your web server:
