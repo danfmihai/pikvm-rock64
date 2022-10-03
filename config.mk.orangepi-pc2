@@ -9,4 +9,4 @@ HOSTNAME = pikvm
 TIMEZONE = America/New_York 
 CARD_DATA_FS_TYPE = ext4
 PIKVM_REPO_URL = https://raw.githubusercontent.com/danfmihai/pikvm-repo/main
-PIKVM_REPO_KEY = F7CC6D43DFFA8D36
+PIKVM_REPO_KEY = C8B8B8BF6DA1B52A
