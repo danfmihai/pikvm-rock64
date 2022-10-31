@@ -18,17 +18,17 @@ Clone the repositories:
 
 	git clone https://github.com/danfmihai/pikvm-rock64.git
 	git clone https://github.com/danfmihai/os.git
-	git clone https://github.com/danfmihai/packages.git
+	git clone https://github.com/danfmihai/packages.git 
 	
 Build the packages:
     
     cd packages
-    make buildenv BOARD=generic ARCH=aarch64 _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
+    make buildenv BOARD=generic ARCH=aarch64 _REPO_KEY=1200949956026A69 _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
     make update BOARD=generic ARCH=aarch64
-    make packages-generic BOARD=generic ARCH=aarch64 _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
-    make buildenv BOARD=generic ARCH=arm _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
+    make packages-generic BOARD=generic ARCH=aarch64 _REPO_KEY=1200949956026A69 _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
+    make buildenv BOARD=generic ARCH=arm _REPO_KEY=1200949956026A69 _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
     make update BOARD=generic ARCH=arm
-    make packages-generic BOARD=generic ARCH=arm _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
+    make packages-generic BOARD=generic ARCH=arm _REPO_KEY=1200949956026A69 _PIBUILDER_REPO=https://github.com/danfmihai/pi-builder
 
 
 Upload the repository to your web server:
